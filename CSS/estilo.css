@@ -1,0 +1,26 @@
+header{
+	height: 60PX;
+	background: black;
+	color: #ffffff;
+	font-family: arial;
+	font-size: 20px;
+}
+
+ 	 
+}
+.pag{
+	float: right;
+	height: 630px;
+	width: 15%;
+	background: gray;
+}
+#separacion{
+	width: 90%;
+	height:630px;
+
+}
+a{
+	text-decoration:none;
+	font-family: arial;
+	color: black;
+}

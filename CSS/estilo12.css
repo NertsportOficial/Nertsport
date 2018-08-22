@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+body {
+/*	area de trabajo de la pagina*/
+  font-family: Arial;
+/*  width:900px;*/
+  margin:0px auto;
+}
+
+
+.column {
+/*	son las imagenes de muestra*/
+    float: left;
+	width: 385px;
+/*	background: red;*/
+	padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+.column img {
+/*	estilo de las imagenes dentro de la cuadricula */
+    opacity: 0.8; 
+    cursor: pointer;
+	width: 300px;
+	height: 280px;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Carros transparentes después de las columnas*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container1 {
+/*	Muestra la imagen dando el clic*/
+	padding-top: 10px;
+	padding:10px;
+	padding-left: 245px;
+	padding-right: 760px;
+    position: relative;
+    display: none;
+/*	background: blue;*/
+	width: 500px;
+	height: 500px;
+}
+
+
+
+/* Closable button inside the expanded image */
+.closebtn {
+/*	BOTON DE  LA X*/
+    position: absolute;
+    right: 200px;
+    color: black;
+    font-size: 50px;
+    cursor: pointer;
+}
+	
+	.centro{
+/*		div que contiene las etiquetas column, row y container*/
+/*		background-color: aqua;*/
+		padding-left: 2PX;
+		padding-right: 2PX;
+
+	}
+	@media screen and (max-width:800px) {
+  .column, .container, .centro, .row {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
