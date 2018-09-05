@@ -11,7 +11,7 @@ body {
 .column {
 /*	son las imagenes de muestra*/
     float: left;
-	width: 385px;
+	width: 335px;
 /*	background: red;*/
 	padding-top: 10px;
     padding-right: 10px;
@@ -24,8 +24,8 @@ body {
 /*	estilo de las imagenes dentro de la cuadricula */
     opacity: 0.8; 
     cursor: pointer;
-	width: 300px;
-	height: 280px;
+	width: 250px;
+	height: 230px;
 }
 
 .column img:hover {
@@ -48,8 +48,8 @@ body {
     position: relative;
     display: none;
 /*	background: blue;*/
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 }
 
 

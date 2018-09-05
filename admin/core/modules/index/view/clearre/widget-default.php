@@ -1,4 +1,5 @@
 <?php
+//este archivo ejecuta la tarea de limpiar la seccion de reabastecimiento
 if(isset($_GET["PRODUCTO_ID"])){
 	$cart=$_SESSION["reabastecer"];
 	if(count($cart)==1){

@@ -1,4 +1,5 @@
 <?php
+// Se encarga de procesar los datos recibidos
 error_reporting(0);
 if(count($_POST)>0){
 	$ADMIN=0;

@@ -1,4 +1,4 @@
-
+<!--Recibe los datos de busqueda -->
 <?php if(isset($_GET["product"]) && $_GET["product"]!=""):?>
 	<?php
 $products = ProductData::getLike($_GET["product"]);
@@ -16,6 +16,7 @@ if(count($products)>0){
 	</thead>
 	<?php
 $products_in_cero=0;
+	// Ciclo de visualizacion de productos
 	 foreach($products as $product):
 $q= OperationData::getQYesF($product->ID_PRODUCTO);
 	?>

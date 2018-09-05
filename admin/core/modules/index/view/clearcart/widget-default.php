@@ -1,4 +1,5 @@
 <?php
+//este archivo ejecuta la tarea de limpiar el carrito compras
 if(isset($_GET["PRODUCTO_ID"])){
 	$cart=$_SESSION["cart"];
 	if(count($cart)==1){

@@ -1,11 +1,10 @@
 <?php
-/// evilnapsis.tk evilnaps 6RSk!IpTJ]vv
+
 class Database {
 	public static $db;
 	public static $con;
 	function Database(){
 		$this->user="tecnotro_admin";$this->pass="L00lapal00za";$this->host="localhost";$this->ddbb="tecnotro_admin";
-//		$this->user="minedeck_mduser";$this->pass="l00lapal00za";$this->host="localhost";$this->ddbb="minedeck_md";
 	}
 
 	function connect(){

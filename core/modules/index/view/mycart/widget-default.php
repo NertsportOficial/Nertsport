@@ -4,7 +4,7 @@ $total = 0;
 <div class="container">
 	<div class="row">
 
-		<div class="col-md-12">
+		<div class="col-md-11">
 			<?php if(!isset($_SESSION["CLIENTE_ID"])):?>
 				<p class="alert alert-danger">Debes registrarte e iniciar sesion para proceder.</p>
 			<?php endif; ?>
@@ -13,7 +13,7 @@ $total = 0;
 
 	<div class="row">
 
-		<div class="col-md-12">
+		<div class="col-md-11">
 
 
 

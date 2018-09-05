@@ -1,4 +1,4 @@
-        <!-- Main Content -->
+        <!-- Lista de clientes -->
 
 <div class="btn-group pull-right">
   <a href="index.php?view=newclient" class="btn btn-default"><i class='fa fa-smile-o'></i> Nuevo Cliente</a>
@@ -17,7 +17,7 @@
 
     $users = ClientData::getAll();
     if(count($users)>0){
-      // si hay usuarios
+      //si hay usuarios
       ?>
 
       <table class="table table-bordered table-hover">

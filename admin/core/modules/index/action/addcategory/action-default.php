@@ -1,4 +1,5 @@
 <?php
+//Se encarga de procesar los datos recibidos
 error_reporting(0);
 $cat =  new CategoryData();
 $cat->NOMBRE = $_POST["NOMBRE"];

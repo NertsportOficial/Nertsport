@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-// print_r($_POST);
+//Procesa la modificacion de los datos
 $product =  new ProductData();
 foreach ($_POST as $k => $v) {
 	$product->$k = $v;

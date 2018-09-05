@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-06-2018 a las 14:20:34
--- Versión del servidor: 10.1.26-MariaDB
--- Versión de PHP: 7.1.9
+-- Tiempo de generación: 05-06-2018 a las 04:19:01
+-- Versión del servidor: 10.1.30-MariaDB
+-- Versión de PHP: 7.2.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -72,7 +72,7 @@ INSERT INTO `categoria` (`ID_CATEGORIA`, `NOMBRE`, `NOMBRE_CORTO`, `EN_INICIO`, 
 (1, 'Adidas', 'ADS', 0, 0, 1),
 (2, 'Puma', 'PMA', 0, 0, 1),
 (3, 'Nike', 'NKE', NULL, NULL, 1),
-(4, 'Le coq sportfit', 'LQS', NULL, NULL, 0);
+(4, 'Le coq sportfit', 'LQS', NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -100,9 +100,7 @@ CREATE TABLE `cliente` (
 INSERT INTO `cliente` (`ID_CLIENTE`, `NOMBRE`, `APELLIDO`, `CORREO`, `TELEFONO`, `DIRECCION`, `PASSWORD`, `ACTIVO`, `CREADO_EN`, `avatar`) VALUES
 (1, 'Walter Esteban ', 'Montoya lucero', 'waltermontoya47@hotmail.com', '3138053315', 'Cll 44 B N 10A-95 Sur', '$1$E9/NivKr$VK4VOVSQoe.GlC1NPz6H.0', NULL, '2018-06-04 13:23:48', 'Perfiles/1.jpg'),
 (2, 'Caramelito', 'De Coco', 'Caramelitodecocohotmail.com', '1234567489', 'La costa', NULL, NULL, '2018-06-04 18:24:31', NULL),
-(3, 'Susana', 'Horia', 'Susanahoria47@hotmail.com', '3214567285', 'Lomas Turbas', '$1$bXHOst0P$kN6ZuAk3EjyDpvVQY9JmF.', NULL, '2018-06-04 18:50:22', NULL),
-(4, 'Jurany ', 'Gongora ', 'GongoraJu@gmail.com', '3153034889', 'bosa ', '$1$rKoEA1VP$o0JbI3luwMKk.3ZhUKL0k.', NULL, '2018-06-05 06:33:38', NULL),
-(5, 'Jurany ', 'Gongora ', 'GongoraJu@gmail.com', '3153034889', 'bosa ', '$1$Y/qykwcH$jwH6RF7GycJ4h88xwxBAi0', NULL, '2018-06-05 06:33:40', 'Perfiles/5.jpg');
+(3, 'Susana', 'Horia', 'Susanahoria47@hotmail.com', '3214567285', 'Lomas Turbas', '$1$bXHOst0P$kN6ZuAk3EjyDpvVQY9JmF.', NULL, '2018-06-04 18:50:22', NULL);
 
 -- --------------------------------------------------------
 
@@ -180,10 +178,7 @@ INSERT INTO `operacion` (`ID_OPERACION`, `PRODUCTO_ID`, `CANTIDAD`, `OPERACION_T
 (11, 5, 135, 1, 2, 7, '2018-06-04 18:20:04'),
 (12, 6, 39, 1, 2, 8, '2018-06-04 18:22:22'),
 (13, 6, 2, 2, 1, 9, '2018-06-04 18:26:56'),
-(14, 5, 3, 2, 1, 9, '2018-06-04 18:26:56'),
-(15, 2, 5, 2, 1, 10, '2018-06-05 06:36:20'),
-(16, 4, 5, 2, 1, 10, '2018-06-05 06:36:20'),
-(17, 6, 5, 2, 1, 10, '2018-06-05 06:36:20');
+(14, 5, 3, 2, 1, 9, '2018-06-04 18:26:56');
 
 -- --------------------------------------------------------
 
@@ -236,12 +231,12 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`ID_PRODUCTO`, `NOMBRE_CORTO`, `NOMBRE`, `CODIGO`, `DESCRIPCION`, `FOTO`, `FOTO1`, `FOTO2`, `ES_DESTACADO`, `ES_PUBLICO`, `EN_EXISTENCIA`, `INVENTARIO_MIN`, `CREADO_EN`, `ORDENADO_EN`, `PRECIO`, `CATEGORIA_ID`, `GENERO_ID`, `ADMIN_ID`) VALUES
-(1, 'Qu5VVUA2ocC', 'Tenis Superstar', 'DSF231FRDS', 'CaracterÃ­sticas de los Tenis Superstar\r\nMarca: Adidas.\r\nModelo: C77124SUPERSTAR.\r\nTipo: urbanos.\r\nGÃ©nero: Hombre.\r\nMaterial: cuero.\r\nMaterial interno: textil.\r\nMaterial de la suela: antideslizante.\r\nTipo de suela: antideslizante.', '1_1.png', '3_2.png', '2_1.png', 1, 1, 1, 10, '2018-06-04 13:21:43', NULL, 150000, 1, 3, NULL),
-(2, 'gnRcENcG6Y3', 'Tenis Galaxy 4', 'SD54EDW21', 'CaracterÃ­sticas de los Tenis Galaxy 4 de Adidas\r\nTipo: tenis de running.\r\nGÃ©nero: mujer.\r\nMaterial: textil y sintÃ©tico.\r\nMaterial interior: textil y sintÃ©tico.\r\nMaterial de la suela: goma.', '4_1.png', '5_1.png', '6_1.png', 1, 1, 1, 10, '2018-06-04 17:27:54', NULL, 120000, 1, 2, NULL),
-(3, 'idG9k9qZCCE', 'Tenis Flex Experience', 'GH45642SA', 'CaracterÃ­sticas de los Tenis Flex Experience de Nike\r\nTipo: tenis de running.\r\nGÃ©nero: hombre.\r\nMaterial: 84% textil y 16% sintÃ©tico.\r\nMaterial interior: 100% poliÃ©ster.\r\nMaterial de la suela: 90% plÃ¡stico y 10% caucho.', '7.png', '9.png', '8.png', 1, 1, 1, 10, '2018-06-04 18:14:40', NULL, 149990, 3, 2, NULL),
-(4, '3DJyKPIsViq', 'Tenis Enzo Strap', '423SA456E', 'CaracterÃ­sticas de los Tenis Enzo Strap de Puma\r\nTipo: tenis moda.\r\nGÃ©nero: hombre.\r\nMaterial: 90% textil y 10% sintÃ©tico.\r\nMaterial interno: 100% textil.\r\nMaterial de la suela: 100% caucho.', '10.png', '11.png', '12.png', 1, 1, 1, 15, '2018-06-04 18:16:52', NULL, 190000, 2, 1, NULL),
-(5, 'zttZ7ZfduGL', 'Tenis Airmax Motion', 'HJK342BDS', 'CaracterÃ­sticas de los Tenis Airmax Motion de Nike\r\nTipo: tenis moda.\r\nGÃ©nero: mujer.\r\nMaterial: 69% textil y 31% sintÃ©tico.\r\nMaterial interno: 100% poliÃ©ster.\r\nMaterial de la suela: 60% plÃ¡stico y 40% caucho.', '13.png', '14.png', '15.png', 1, 1, 1, 20, '2018-06-04 18:18:44', NULL, 200000, 3, 2, NULL),
-(6, 'GwR_LrtV3eb', 'Tenis Superstar/Negras', 'WSD4567HT', 'CaracterÃ­sticas de los Tenis Superstars Foundation\r\nGÃ©nero: hombre.\r\nTipo: urbanos.\r\nMaterial: Cuero sintÃ©tico.\r\nMaterial interno: textil.\r\nMaterial de la suela: antideslizante.\r\nTipo de cierre: Cordones .', '16.png', '17.png', '18.png', 1, 1, 1, 10, '2018-06-04 18:21:51', NULL, 150000, 1, 3, NULL);
+(1, 'Qu5VVUA2ocC', 'Puma Suede Classic', 'DSF231FRDS', 'Los zapatos Puma Suede Classic son una reinvenciÃ³n del clÃ¡sico zapato deportivo iconico Puma, el cual cuenta con una serie de caracterÃ­sticas que garantizan la mayor comodidad y seguridad al propietario.', 'Suede_5.jpg', '180306034312-marathon_2.jpg', 'Air_2.jpg', 1, 1, 1, 10, '2018-06-04 13:21:43', NULL, 220000, 1, 1, NULL),
+(2, 'gnRcENcG6Y3', 'Zapatilla Puma Ignite Xt V2', 'SD54EDW21', 'El calzado deportivo Zapatilla Puma Ignite Xt V2 es una mejora tanto de diseÃ±o como de comodidad frente a sus antecesoras, asegurando a sus propietarios una experiencia de fiabilidad y durabilidad en su uso.', 'Xt_2.jpg', NULL, NULL, 1, 1, 1, 10, '2018-06-04 17:27:54', NULL, 190000, 2, 1, NULL),
+(3, 'idG9k9qZCCE', 'Le Coq Sportif LCS R XVI', 'GH45642SA', 'Le Coq Sportif LCS R XVI cuenta con un diseÃ±o aerodinÃ¡mico y cÃ³modo, con suelas resistentes a la fricciÃ³n, las cuales no se gastaran con facilidad\r\n', 'LCS.jpg', NULL, NULL, 1, 1, 1, 10, '2018-06-04 18:14:40', NULL, 120000, 4, 2, NULL),
+(4, '3DJyKPIsViq', 'Nike Classic Cortez', '423SA456E', 'El calzado Nike Classic Cortez esta diseÃ±ado especÃ­ficamente para adaptarse cÃ³modamente a cada situaciÃ³n en la que pueda ser puesto, dando a su propietario una mayor satisfacciÃ³n mientra se usa.', 'Cortez.jpg', NULL, NULL, 1, 1, 1, 15, '2018-06-04 18:16:52', NULL, 190000, 3, 2, NULL),
+(5, 'zttZ7ZfduGL', 'Adidas Stan Smith', 'HJK342BDS', 'Los zapatos deportivos Adidas Stan Smith son un tipo de calzado altamente resistente y duradero para las actividades deportivas, ideales para aquellas personas que se dediquen a este tipo de actividades.', '180306034312-marathon_1.jpg', NULL, NULL, 1, 1, 1, 20, '2018-06-04 18:18:44', NULL, 200000, 1, 1, NULL),
+(6, 'GwR_LrtV3eb', 'Nike Air Max', 'WSD4567HT', 'Los zapatos Nike Air Max ofrecen un diseÃ±o que se adapta a las necesidades de aquellas personas que disfrutan del deporte, brindado seguridad y comodidad a su propietario en sus rutinas de ejercicio. ', 'Air_1.jpg', NULL, NULL, 1, 1, 1, 40, '2018-06-04 18:21:51', NULL, 150000, 3, 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -262,9 +257,7 @@ CREATE TABLE `producto_ver` (
 --
 
 INSERT INTO `producto_ver` (`ID_VER`, `VISTA_ID`, `PRODUCTO_ID`, `CREADO_EN`, `REALIP`) VALUES
-(1, NULL, 1, '2018-06-04 19:40:11', '::1'),
-(2, NULL, 3, '2018-06-05 06:29:07', '::1'),
-(3, NULL, 4, '2018-06-05 06:29:17', '::1');
+(1, NULL, 1, '2018-06-04 19:40:11', '::1');
 
 -- --------------------------------------------------------
 
@@ -296,8 +289,7 @@ INSERT INTO `venta` (`ID_VENTA`, `ADMIN_ID`, `CLIENTE_ID`, `OPERACION_TIPO_ID`, 
 (6, 1, NULL, 1, NULL, NULL, NULL, '2018-06-04 17:28:27'),
 (7, 1, NULL, 1, NULL, NULL, NULL, '2018-06-04 18:20:04'),
 (8, 1, NULL, 1, NULL, NULL, NULL, '2018-06-04 18:22:22'),
-(9, NULL, 1, 2, NULL, NULL, NULL, '2018-06-04 18:26:56'),
-(10, NULL, 5, 2, NULL, NULL, NULL, '2018-06-05 06:36:20');
+(9, NULL, 1, 2, NULL, NULL, NULL, '2018-06-04 18:26:56');
 
 --
 -- Índices para tablas volcadas
@@ -395,7 +387,7 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de la tabla `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `ID_CLIENTE` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID_CLIENTE` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `estatus`
@@ -413,7 +405,7 @@ ALTER TABLE `genero`
 -- AUTO_INCREMENT de la tabla `operacion`
 --
 ALTER TABLE `operacion`
-  MODIFY `ID_OPERACION` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `ID_OPERACION` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `operacion_tipo`
@@ -431,13 +423,13 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT de la tabla `producto_ver`
 --
 ALTER TABLE `producto_ver`
-  MODIFY `ID_VER` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_VER` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `venta`
 --
 ALTER TABLE `venta`
-  MODIFY `ID_VENTA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID_VENTA` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Restricciones para tablas volcadas

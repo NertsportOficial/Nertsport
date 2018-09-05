@@ -5,9 +5,10 @@ Viewer::addView($p->ID_PRODUCTO,"PRODUCTO_ID","producto_ver");
  ?>
 <section>
   <div class="container">
+    <div class="row">
+      <div class="col-md-11">
 
   
-
     <div style="background:#141616;font-size:25px;color:white;padding:5px;"><?php echo $p->NOMBRE; ?></div>
 <br>
 <?php if($p!=null):
@@ -36,7 +37,7 @@ $img2 = "admin/storage/products/".$p->FOTO2;
 
   <div class="container1">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-    <img id="expandedImg" width="600" height="450">
+    <img id="expandedImg" width="650" height="450">
     <div id="imgtext"></div>
   </div>
 </div>
@@ -52,7 +53,6 @@ function myFunction(imgs) {
 }
 </script>
 
-  <div class="">
     <h1>$ <?php echo number_format($p->PRECIO,2,".",","); ?></h1>
 <?php 
 $in_cart=false;
@@ -80,16 +80,12 @@ if(isset($_SESSION["cart"])){
     <?php else:?>
       <p class="text-warning">Producto no disponible</p>
     <?php endif; ?>
-  </div>
 
-  <br><br>
-  <div class="row">
-  <div class="col-md-12">
-    <h3>Codigo:</h3><p><?php echo $p->CODIGO; ?></p></h4><br>
+ 
+  <h3>Codigo:</h3><p><?php echo $p->CODIGO; ?></p><br>
     <h3>Descripcion:</h3>
   <p><?php echo $p->DESCRIPCION; ?></p>
-</div>
-</div>
+
 
 <?php endif; ?>
 

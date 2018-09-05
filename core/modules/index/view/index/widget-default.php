@@ -8,10 +8,9 @@ $news = ProductData::getFeatureds();
 
   <div class="row">
 
-  <div class="col-md-12">
+  <div class="col-md-11">
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <section>
-<div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel"
   >
 <!-- Indicadores -->
@@ -84,7 +83,7 @@ $news = ProductData::getFeatureds();
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+
 </section>
 <br><br>
 

@@ -1,5 +1,4 @@
 <?php
-
 if(count($_POST)>0){
 	$user = new ClientData();
 	$user->NOMBRE = $_POST["NOMBRE"];

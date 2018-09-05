@@ -4,7 +4,6 @@
       <div class="panel panel-default">
         <div class="panel-heading">Ingresar al sistema</div>
         <div class="panel-body">
-          <?php// echo sha1(md5("tecnotronika"));?>
 <form role="form" method="post" action="login.php">
   <div class="form-group">
     <label for="exampleInputEmail1">Usuario</label>

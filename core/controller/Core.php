@@ -1,7 +1,5 @@
 <?php
 
-
-// 14 de Abril del 2014
 // Core.php
 // @brief obtiene las configuraciones, muestra y carga los contenidos necesarios.
 

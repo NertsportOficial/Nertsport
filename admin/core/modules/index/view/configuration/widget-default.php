@@ -1,5 +1,6 @@
 <br><br><br><br><div class="row">
 	<div class="col-md-3">
+    <!-- Este formulario cumple la funcion del cambio de contraseña -->
 
 	</div>
 	<div class="col-md-6">

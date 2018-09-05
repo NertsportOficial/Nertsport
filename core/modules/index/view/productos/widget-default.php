@@ -21,7 +21,7 @@ $products = ProductData::getLike($_GET["Q"]);
 
   <div class="row">
 
-  <div class="col-md-12">
+  <div class="col-md-11">
     <div style="background:#333;font-size:25px;color:white;padding:5px;"><?php 
     if(isset($_GET["act"]) && $_GET["act"]!=""){ echo "Busqueda: ".$_GET["Q"]; }else { echo $cat->NOMBRE; } ?></div>
 <br>

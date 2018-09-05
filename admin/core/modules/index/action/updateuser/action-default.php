@@ -1,9 +1,12 @@
 <?php
 error_reporting(0);
+//Procesa la modificacion de los datos
 if(count($_POST)>0){
 	$ADMIN=0;
+	// Se comprueba si el usuario posee permisos de admin
 	if(isset($_POST["ADMIN"])){$ADMIN=1;}
 	$ACTIVO=0;
+	//Y si esta activo
 	if(isset($_POST["ACTIVO"])){$ACTIVO=1;}
 	$user = UserData::getById($_POST["ID_ADMIN"]);
 	$user->NOMBRES = $_POST["NOMBRES"];

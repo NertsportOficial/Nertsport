@@ -12,7 +12,7 @@ $products = OperationData::getAllBySellId($_GET["ID_VENTA"]);
 <div class="container">
 <div class="row">
 
-<div class="col-md-12">
+<div class="col-md-11">
 <h3>Bienvenido, <?php echo $client->NOMBRE." ".$client->APELLIDO; ?></h3>
 	<a href="./index.php?view=client" class="btn btn-default"><i class="fa fa-chevron-left"></i> Regresar</a>
 	<a href="./invoice.php?ID_VENTA=<?php echo $buy->ID_VENTA;?>" class="btn btn-default"><i class="fa fa-file-o"></i> Imprimir</a>
@@ -23,7 +23,7 @@ $products = OperationData::getAllBySellId($_GET["ID_VENTA"]);
 </div>
 <div class="container">
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-md-11">
 		<?php foreach($products as $pr):
  if($pr->ESTATUS_ID==1):?>
 <p class="alert alert-warning">Operacion Pendiente</p>

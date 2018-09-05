@@ -1,4 +1,5 @@
 <?php
+//
 class Viewer {
 
 	public static function addView($servid,$field,$table){

@@ -1,4 +1,5 @@
 <?php
+//Procesa la modificacion de los datos
 error_reporting(0);
 $cat =  CategoryData::getById($_POST["CATEGORIA_ID"]);
 $cat->NOMBRE = $_POST["NOMBRE"];

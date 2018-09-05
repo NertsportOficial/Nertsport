@@ -1,4 +1,5 @@
 <?php
+//Procesa los datos del cambio de estado de la operacion
 error_reporting(0);
 $buy =  OperationData::getById($_POST["OPERACION_ID"]);
 $buy->ESTATUS_ID = $_POST["ESTATUS_ID"];

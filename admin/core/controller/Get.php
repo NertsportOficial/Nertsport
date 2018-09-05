@@ -1,9 +1,6 @@
 <?php
 
 
-// 13 de Octubre del 2014
-// Get.php
-// @brief esto es algo mucho mas magico
 
 class Get {
 	function __get($value){
@@ -13,7 +10,7 @@ class Get {
 		}
 		return $_GET[$value];
 	}
-
+	
 	function  exist($value){
 		$found = false;
 		if(isset($_GET[$value])){

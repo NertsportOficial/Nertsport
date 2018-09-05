@@ -32,7 +32,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar"></div>
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="width:240px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <img src="Imagenes/LOGO.jpg" width="200" height="90">
@@ -42,10 +42,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- formulario inicio de sesion-->
   <?php if(!isset($_SESSION["CLIENTE_ID"])):?>
         <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-
-
-
-    </li>
     </div>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newslette').style.display='block'">INICIAR SESION</a>
 <div id="newslette" class="w3-modal">
@@ -118,12 +114,11 @@ $("#changepasswd").submit(function(e){
 });
 
 </script>
-
   </form>
+
 
     </div>
   </div>
-</div>
 </div>
 <a href="index.php?view=mycart" class="btn btn-block btn-default"><i class="fa fa-shopping-cart"></i>
 <?php if(isset($_SESSION["carrito"])):?>
@@ -204,10 +199,13 @@ $Generos = UnitData::getPublics();
     
 
 </ul>
+</li>
+</ul>
 </nav>
 <br>
-<div  class="w3-main" style="margin-left:270px; width: 1140px">
-    <form class="form-horizontal" role="form">
+</div>
+<div class="col-xs-3"></div>
+<form class="form-horizontal" role="form">
 <div class="input-group">
 <input type="hidden" name="view" value="productos">
 <input type="hidden" name="act" value="search">
@@ -217,7 +215,7 @@ $Generos = UnitData::getPublics();
       </span>
     </div><!-- /input-group -->
 </form>
-</div>
+
 <br>
   <!-- formulario administrador -->
 <div id="newsletter" class="w3-modal">
